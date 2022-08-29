@@ -32,10 +32,49 @@ body {
 
 .prof, .about-me {
     padding-left: 65px;
-    opacity: 70%;
+    opacity: 80%;
 }
 
 .btn {
     margin-top: 20px;
     margin-left: 65px;
+    width: 150px;
+}
+
+.project {
+    margin-top: 100px;    
+    font-family: var(--title-text);
+    text-align: center;
+    font-weight: normal;
+    font-size: 60px;
+}
+
+.first-project {
+    margin: 100px auto;
+}
+
+.landing-image {
+    width: 600px;
+}
+
+.title {
+    font-family: var(--title-text);
+}
+
+.skills {
+    opacity: 80%;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 14px;
+    opacity: 80%;
+}
+
+.description p, .description ul {
+    margin-bottom: 0px;
+}
+
+.certificate, .final-project {
+    width: 150px;
 }
