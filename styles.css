@@ -1,80 +1,121 @@
 :root {
-    --main-color: #2e2e2e;
-    --text-color: white;
-    --title-text: 'Josefin Sans', sans-serif;
-    --text: 'Montserrat', sans-serif;
+  --main-color: #2e2e2e;
+  --text-color: white;
+  --title-text: "Josefin Sans", sans-serif;
+  --text: "Montserrat", sans-serif;
 }
 
 body {
-    font-family: var(--text);
-    background: var(--main-color);
-    color: var(--text-color);
+  font-family: var(--text);
+  background: var(--main-color);
+  color: var(--text-color);
 }
 
 .name {
-    font-family: var(--title-text);
-    font-weight: bold;
-    font-size: 72px;
+  font-family: var(--title-text);
+  font-weight: bold;
+  font-size: 72px;
 }
 
 .introduce {
-    margin: 50px;
+  margin: 50px;
 }
 
 .portret {
-    width: 400px;
-    
+  width: 400px;
 }
 
 .about-me {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
-.prof, .about-me {
-    padding-left: 65px;
-    opacity: 80%;
+.prof,
+.about-me {
+  padding-left: 65px;
+  opacity: 80%;
 }
 
 .btn {
-    margin-top: 20px;
-    margin-left: 65px;
-    width: 150px;
+  margin-top: 20px;
+  margin-left: 65px;
+  width: 150px;
 }
 
 .project {
-    margin-top: 100px;    
-    font-family: var(--title-text);
-    text-align: center;
-    font-weight: normal;
-    font-size: 60px;
+  margin-top: 100px;
+  font-family: var(--title-text);
+  text-align: center;
+  font-weight: normal;
+  font-size: 60px;
 }
 
 .first-project {
-    margin: 100px auto;
+  margin: 100px auto;
 }
 
 .landing-image {
-    width: 600px;
+  width: 600px;
 }
 
 .title {
-    font-family: var(--title-text);
+  font-family: var(--title-text);
 }
 
 .skills {
-    opacity: 80%;
-    margin-bottom: 20px;
+  opacity: 80%;
+  margin-bottom: 20px;
 }
 
 .description {
-    font-size: 14px;
-    opacity: 80%;
+  font-size: 14px;
+  opacity: 80%;
 }
 
-.description p, .description ul {
+.description p,
+.description ul {
+  margin-bottom: 0px;
+}
+
+.certificate,
+.final-project {
+  width: 150px;
+}
+
+@media (max-width: 950px) {
+  .introduce {
     margin-bottom: 0px;
-}
+  }
 
-.certificate, .final-project {
-    width: 150px;
+  .prof,
+  .about-me {
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 56px;
+  }
+
+  .prof {
+    font-size: 20px;
+  }
+
+  .contact-me {
+    margin: 50px auto;
+    display: block;
+    width: auto;
+  }
+
+  .project {
+    font-size: 42px;
+    margin: 0px;
+  }
+
+  .first-project {
+    margin: 30px 50px;
+    padding: 0px 12px;
+    max-width: auto;
+  }
 }
