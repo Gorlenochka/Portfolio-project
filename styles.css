@@ -11,22 +11,19 @@ body {
   color: var(--text-color);
 }
 
-.name {
-  font-family: var(--title-text);
-  font-weight: bold;
-  font-size: 72px;
-}
-
 .introduce {
-  margin: 50px;
+  margin: 50px 50px 100px;
 }
 
 .portret {
   width: 400px;
+  border-radius: 5px;
 }
 
-.about-me {
-  padding-top: 20px;
+.name {
+  font-family: var(--title-text);
+  font-weight: bold;
+  font-size: 72px;
 }
 
 .prof,
@@ -35,40 +32,61 @@ body {
   opacity: 80%;
 }
 
-.btn {
+.about-me {
+  padding-top: 20px;
+}
+
+.contact-me,
+.certificate,
+.final-project {
   margin-top: 20px;
   margin-left: 65px;
   width: 150px;
 }
 
+.my-projects {
+  background-image: url("/images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 .project {
-  margin-top: 100px;
   font-family: var(--title-text);
   text-align: center;
   font-weight: normal;
   font-size: 60px;
+  padding-top: 80px;
 }
 
 .first-project {
-  margin: 100px auto;
+  margin: auto;
+  padding: 80px 0px;
 }
 
 .landing-image {
-  width: 600px;
+  width: 550px;
+  border-radius: 5px;
+}
+
+.full-description {
+  padding: 50px 0px 0px 50px;
 }
 
 .title {
   font-family: var(--title-text);
+  font-size: 30px;
 }
 
 .skills {
-  opacity: 80%;
+  padding-left: 50px;
   margin-bottom: 20px;
 }
 
 .description {
   font-size: 14px;
-  opacity: 80%;
+  padding-left: 50px;
 }
 
 .description p,
@@ -81,41 +99,71 @@ body {
   width: 150px;
 }
 
-@media (max-width: 950px) {
-  .introduce {
-    margin-bottom: 0px;
+@media (max-width: 1024px) {
+  .prof,
+  .about-me {
+    padding-left: 120px;
+    opacity: 80%;
+  }
+
+  .contact-me {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .full-description {
+    padding: 0px;
+  }
+
+  .first-project {
+    padding: 40px 0px;
   }
 
   .prof,
   .about-me {
-    padding: 0px;
-    margin-bottom: 20px;
-  }
-
-  .name {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 56px;
-  }
-
-  .prof {
-    font-size: 20px;
+    padding-left: 65px;
+    opacity: 80%;
   }
 
   .contact-me {
     margin: 50px auto;
     display: block;
-    width: auto;
+  }
+
+  .introduce {
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .introduce {
+    margin-bottom: 0px;
+  }
+
+  .name {
+    font-size: 56px;
   }
 
   .project {
-    font-size: 42px;
-    margin: 0px;
+    padding-top: 40px;
+  }
+
+  .full-description {
+    padding: 0px 40px;
   }
 
   .first-project {
-    margin: 30px 50px;
-    padding: 0px 12px;
-    max-width: auto;
+    padding: 20px 10px;
+  }
+
+  .description ul {
+    margin-bottom: 20px;
+  }
+
+  .certificate,
+  .final-project {
+    display: block;
+    margin: 15px auto;
   }
 }
