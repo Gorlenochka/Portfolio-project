@@ -44,7 +44,8 @@ body {
   width: 150px;
 }
 
-.my-projects {
+.my-projects,
+.resume {
   background-image: url("/images/background.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -166,4 +167,85 @@ body {
     display: block;
     margin: 15px auto;
   }
+}
+
+/* About me */
+
+.introduction-part {
+  margin-bottom: 100px;
+}
+
+.foto {
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.resume .name {
+  margin-top: 50px;
+  text-align: end;
+}
+
+.resume .prof {
+  text-align: end;
+  margin-bottom: 30px;
+}
+
+.quote {
+  width: 400px;
+  margin-left: 240px;
+  text-align: end;
+}
+
+hr {
+  width: 300px;
+  margin-left: 340px;
+  margin-right: 0px;
+}
+
+.author {
+  text-align: end;
+}
+
+.first-part-resume {
+  margin-bottom: 100px;
+}
+
+.about-me-col {
+  background-color: #2e2e2e;
+  padding: 20px 5px 0px 0px;
+  border-radius: 10px;
+  margin-right: 150px;
+}
+
+.second-part-resume {
+  padding-bottom: 100px;
+}
+
+.title-about-me,
+.title-contact,
+.title-education,
+.title-experience,
+.title-skills {
+  writing-mode: vertical-rl;
+  transform:scale(-1);
+  text-decoration: underline;  
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  opacity: 80%;
+  background-color: #2e2e2e;
+  text-align: end;
+}
+
+.contact-col, .skills-col {
+  background-color: #2e2e2e;
+  padding: 20px 10px 20px 5px;
+  border-radius: 10px;
+}
+
+.education-col, .experience-col {
+  background-color: #2e2e2e;
+  padding: 20px 10px 20px 5px;
+  border-radius: 10px;
+  margin-right: 100px;
 }
