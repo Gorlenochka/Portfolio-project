@@ -196,7 +196,7 @@ body {
   text-align: end;
 }
 
-hr {
+.line-quote {
   width: 300px;
   margin-left: 340px;
   margin-right: 0px;
@@ -206,18 +206,7 @@ hr {
   text-align: end;
 }
 
-.first-part-resume {
-  margin-bottom: 100px;
-}
-
-.about-me-col {
-  background-color: #2e2e2e;
-  padding: 20px 5px 0px 0px;
-  border-radius: 10px;
-  margin-right: 150px;
-}
-
-.second-part-resume {
+.first-part-resume, .second-part-resume, .third-part-resume {
   padding-bottom: 100px;
 }
 
@@ -225,10 +214,11 @@ hr {
 .title-contact,
 .title-education,
 .title-experience,
-.title-skills {
+.title-skills,
+.title-languages {
   writing-mode: vertical-rl;
-  transform:scale(-1);
-  text-decoration: underline;  
+  transform: scale(-1);
+  text-decoration: underline;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
@@ -237,15 +227,42 @@ hr {
   text-align: end;
 }
 
-.contact-col, .skills-col {
+.contact-col,
+.skills-col,
+.education-col,
+.experience-col,
+.about-me-col,
+.languages-col {
   background-color: #2e2e2e;
   padding: 20px 10px 20px 5px;
-  border-radius: 10px;
+  border-radius: 10px;  
 }
 
-.education-col, .experience-col {
-  background-color: #2e2e2e;
-  padding: 20px 10px 20px 5px;
-  border-radius: 10px;
+.about-me-col,
+.skills-col {
   margin-right: 100px;
+}
+
+.fa-solid {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.fa-house {
+  line-height: 1.25;
+}
+
+.fa-phone,
+.fa-envelope {
+  line-height: 1.4;
+}
+
+.specialization {
+  font-family: var(--title-text);
+  font-size: 20px;
+}
+
+.line-education {
+  width: 300px;
 }
