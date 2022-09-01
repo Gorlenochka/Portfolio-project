@@ -112,7 +112,7 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .full-description {
     padding: 0px;
   }
@@ -206,7 +206,9 @@ body {
   text-align: end;
 }
 
-.first-part-resume, .second-part-resume, .third-part-resume {
+.first-part-resume,
+.second-part-resume,
+.third-part-resume {
   padding-bottom: 100px;
 }
 
@@ -235,7 +237,7 @@ body {
 .languages-col {
   background-color: #2e2e2e;
   padding: 20px 10px 20px 5px;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 .about-me-col,
@@ -265,4 +267,96 @@ body {
 
 .line-education {
   width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .foto {
+    max-width: 300px;
+    position: absolute;
+  }
+
+  .quote {
+    width: 400px;
+    margin-left: 530px;
+    text-align: end;
+  }
+
+  .line-quote {
+    width: 300px;
+    margin-left: 630px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .introduction-part {
+    margin-bottom: 50px;
+  }
+
+  .resume .name {
+    margin-top: 50px;
+    text-align: start;
+  }
+
+  .resume .prof {
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .quote {
+    width: 100%;    
+    text-align: end;
+    margin-left: 0px;
+    padding-left: 100px;
+  }
+
+  .line-quote {
+    width: 100%;  
+    margin-left: 0px;
+    padding-left: 200px;
+  }
+
+  .first-part-resume,
+  .second-part-resume,
+  .third-part-resume {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {  
+
+  .about-me-col,
+  .skills-col {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .first-part-resume,
+  .second-part-resume,
+  .third-part-resume {
+    padding-bottom: 0px;
+  }
+  .about-me-col, .contact-col, .education-col, .skills-col, .languages-col {
+    margin: 0px 50px 50px 50px;
+  }
+
+  .line-education {
+    width: auto;
+  }
+
+  .text-education {
+    padding-left: 50px;
+  }
+
+  .introduction-part {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 56px;
+  }
 }
