@@ -80,7 +80,7 @@ body {
 }
 
 .my-projects,
-.resume {
+.resume, .contact {
   background-image: url("/images/background.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -477,4 +477,32 @@ margin: 0px;
   .name {
     font-size: 56px;
   }
+}
+
+/*Contact*/
+
+.contact {
+  padding: 100px;
+}
+
+.main {
+  font-family: var(--text);
+  font-weight: bold;
+  font-size: 52px;
+  padding-left: 200px;
+}
+
+.in-touch, .mail-phone {  
+  font-size: 20px;
+}
+
+.mail-phone {
+  font-size: 25px;
+}
+
+ .contact .conteiner {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 50px 50px;
+  margin-top: 80px;
 }
