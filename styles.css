@@ -135,6 +135,34 @@ body {
   width: 150px;
 }
 
+footer {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.copyright p {
+margin: 0px;
+}
+
+.copyright-author {
+  font-family: var(--title-text);
+  font-size: 20px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  opacity: 80%;
+  transition: all 100ms ease-in-out;
+  margin: 0px 20px;
+  color: var(--text-color);
+}
+
+.fa-brands:hover {
+  opacity: 100%;
+}
+
 @media (max-width: 1024px) {
   .prof,
   .about-me {
@@ -182,6 +210,18 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  footer {
+    display: block;
+    text-align: center;
+    height: auto;    
+  }
+
+  .copyright, .social {
+    margin: 15px auto;
+  }
+}
+
 @media (max-width: 500px) {
   nav {
     margin: 15px auto 15px;
@@ -221,6 +261,15 @@ body {
   .final-project {
     display: block;
     margin: 15px auto;
+  }
+  
+  .copyright p, .copyright-author {
+    font-size: 12px;
+  }
+
+  .fa-brands {
+    font-size: 15px;
+    margin: 0px 10px;
   }
 }
 
@@ -307,12 +356,12 @@ body {
 }
 
 .fa-house {
-  line-height: 1.25;
+  padding-top: 2px;
 }
 
 .fa-phone,
 .fa-envelope {
-  line-height: 1.4;
+  padding-top: 3px;
 }
 
 .specialization {
