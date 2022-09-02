@@ -5,6 +5,41 @@
   --text: "Montserrat", sans-serif;
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  position: absolute;
+  margin: 50px 100px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  opacity: 80%;
+  color: var(--text-color);
+  padding: 0px 20px;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--text-color);
+  opacity: 100%;
+}
+
 body {
   font-family: var(--text);
   background: var(--main-color);
@@ -113,6 +148,16 @@ body {
 }
 
 @media (max-width: 991px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    position: static;
+    margin: 30px auto 30px;
+  }
+
   .full-description {
     padding: 0px;
   }
@@ -138,7 +183,17 @@ body {
 }
 
 @media (max-width: 500px) {
+  nav {
+    margin: 15px auto 15px;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+
   .introduce {
+    margin-top: 30px;
     margin-bottom: 0px;
   }
 
@@ -275,6 +330,10 @@ body {
     position: absolute;
   }
 
+  .resume .introduction-part .col {
+    margin-top: 50px;
+  }
+
   .quote {
     width: 400px;
     margin-left: 530px;
@@ -304,14 +363,14 @@ body {
   }
 
   .quote {
-    width: 100%;    
+    width: 100%;
     text-align: end;
     margin-left: 0px;
     padding-left: 100px;
   }
 
   .line-quote {
-    width: 100%;  
+    width: 100%;
     margin-left: 0px;
     padding-left: 200px;
   }
@@ -323,7 +382,10 @@ body {
   }
 }
 
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
+  .resume .introduction-part .col {
+    margin-top: 0px;
+  }
 
   .about-me-col,
   .skills-col {
@@ -332,13 +394,16 @@ body {
 }
 
 @media (max-width: 550px) {
-
   .first-part-resume,
   .second-part-resume,
   .third-part-resume {
     padding-bottom: 0px;
   }
-  .about-me-col, .contact-col, .education-col, .skills-col, .languages-col {
+  .about-me-col,
+  .contact-col,
+  .education-col,
+  .skills-col,
+  .languages-col {
     margin: 0px 50px 50px 50px;
   }
 
@@ -356,6 +421,10 @@ body {
 }
 
 @media (max-width: 500px) {
+  .resume .name {
+    margin-top: 30px;
+  }
+
   .name {
     font-size: 56px;
   }
