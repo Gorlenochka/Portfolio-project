@@ -506,3 +506,51 @@ margin: 0px;
   padding: 50px 50px;
   margin-top: 80px;
 }
+
+.phone {
+  white-space: nowrap;
+}
+
+@media (max-width: 1225px) {
+  .main {
+    padding-left: 0px;
+  }
+
+  .mail-phone {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .conteiner {
+    margin-top: 30px;
+  }
+
+  .in-touch {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .name {
+    font-size: 56px;
+  }
+
+  .main {
+    font-size: 42px;
+  }  
+
+  .contact .conteiner {
+    padding: 20px;
+  }
+
+  .contact .conteiner p{
+    font-size: 16px;
+  }
+}
